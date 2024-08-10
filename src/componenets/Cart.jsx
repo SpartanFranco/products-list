@@ -38,7 +38,7 @@ const Cart = ({data,id}) => {
       <div className='relative'>
         <img 
         className={` ${quantity>0?'border-Red border-4':'border-transparent'} rounded-[1rem]  w-full h-[90%] `}
-        src={`/src/${widthScreen(width)}`}
+        src={widthScreen(width)}
           alt={name} 
         />
 
