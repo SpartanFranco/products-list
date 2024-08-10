@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import ItemsInCart from './ItemsInCart'
 import ContextCarts from '../context/ContextCarts'
-import imgCarbonNeeutral from '../assets/images/icon-carbon-neutral.svg'
+import imgCarbonNeeutral from '../assets/icon-carbon-neutral.svg'
 import { newPrice } from '../helpers/helpers'
 
 

@@ -1,6 +1,6 @@
 
 import { useContext } from 'react'
-import iconToCart from '../assets/images/illustration-empty-cart.svg'
+import iconToCart from '../assets/illustration-empty-cart.svg'
 import ContextCarts from '../context/ContextCarts'
 import DataOrder from './DataOrder'
 

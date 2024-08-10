@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import ContextCarts from '../context/ContextCarts'
 import ItemsInCart from './ItemsInCart'
-import imgConfirmed from '../assets/images/icon-order-confirmed.svg'
+import imgConfirmed from '../assets/icon-order-confirmed.svg'
 import { TYPES } from '../types/TYPES'
 import { newPrice } from '../helpers/helpers'
 

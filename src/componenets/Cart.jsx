@@ -1,7 +1,7 @@
 
-import iconCart from '../assets/images/icon-add-to-cart.svg'
-import iconAdd from '../assets/images/icon-increment-quantity.svg'
-import iconRest from '../assets/images/icon-decrement-quantity.svg'
+import iconCart from '../assets/icon-add-to-cart.svg'
+import iconAdd from '../assets/icon-increment-quantity.svg'
+import iconRest from '../assets/icon-decrement-quantity.svg'
 
 import ContextCarts from '../context/ContextCarts';
 import { newPrice } from '../helpers/helpers';

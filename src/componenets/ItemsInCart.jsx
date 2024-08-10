@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import SvgRemove from  '../assets/images/icon-remove-item.svg'
+import SvgRemove from  '../assets/icon-remove-item.svg'
 import ContextCarts from '../context/ContextCarts'
 import { TYPES } from '../types/TYPES'
 import { newPrice } from '../helpers/helpers'
