@@ -1,4 +1,4 @@
-import { createContext, useReducer, useState } from "react";
+import { createContext,  useReducer, useState } from "react";
 import dataJson from'../data.json'
 import { initialState, reducerList } from "../reducers/reducerCart";
 
@@ -11,7 +11,10 @@ const CartsProvider=({children})=>{
 const [isModal, setIsModal] = useState(false);
 const [state, dispatch] = useReducer(reducerList,initialState);
 
-const db=JSON.parse(JSON.stringify(dataJson)) ;
+
+const db=  JSON.parse(JSON.stringify(dataJson)) ;
+
+
 
 let totalItems=state.cartItems.reduce((acc,item)=>acc+item.quantity,0)
 let totalPrice=state.cartItems.reduce((acc,item)=>acc+(item.quantity*item.price),0)

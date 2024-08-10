@@ -16,12 +16,12 @@ const Cart = ({data,id}) => {
   const{state,dispatch}=useContext(ContextCarts)
   const [width]=useWidthScreen()
   const{image,name,category,price}=data;
-  const{thumbnail, mobile, tablet,desktop}=image;
+  const{ mobile, tablet,desktop}=image;
 
   let widthScreen=(widthS)=>{
-    if(widthS<640) return mobile
-    else if(widthS<768)return tablet
-    else return desktop 
+    if(widthS>640) return tablet
+    else if(widthS<768)return desktop
+    else return mobile
   }
   const handleAdd=(id)=>{
     dispatch({type:TYPES.ADD_TO_CART,payload:{...data,id}})
@@ -38,12 +38,9 @@ const Cart = ({data,id}) => {
       <div className='relative'>
         <img 
         className={` ${quantity>0?'border-Red border-4':'border-transparent'} rounded-[1rem]  w-full h-[90%] `}
-        src={widthScreen(width)}
+        src={`/products-list/src/${widthScreen(width)}`}
           alt={name} 
         />
-
-
-
 
         <div
          className={`w-full h-[4.3rem] max-h-[4.5rem]  absolute -bottom-8 sm:-bottom-10  xl:-bottom-7 2xl:-bottom-9 flex 3xl:-bottom-16 justify-center `}>

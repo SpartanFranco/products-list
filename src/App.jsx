@@ -1,7 +1,6 @@
 
 import MainApp from "./componenets/MainApp"
 import { CartsProvider } from "./context/ContextCarts"
-
 function App() {
 
   return (

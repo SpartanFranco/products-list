@@ -28,7 +28,7 @@ const ItemsInCart = ({
         
       {image&&<img
       className=' col-span-1 rounded-[.7rem] mt-3 '
-      src={`/src/${image.thumbnail}`} alt="" />}
+      src={`/products-list/src/${image.thumbnail}`} alt="" />}
       <div className='col-span-4 ml-3 '>
       <p className='font-bold'>
         {name}

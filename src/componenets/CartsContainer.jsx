@@ -14,7 +14,7 @@ const CartsContainer = () => {
       className='font-bold text-4xl sm:pl-6 pt-3'
       >Desserts</h1>
       <div className='grid sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3'>
-      {db.map((el,index)=>(
+      {db&&db.map((el,index)=>(
         <Cart 
         key={index}
          id={index}
